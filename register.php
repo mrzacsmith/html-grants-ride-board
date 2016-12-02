@@ -8,11 +8,19 @@
        $FName = $_POST['First_Name'];
        $LName = $_POST['Last_Name'];
        $Email = $_POST['Email'];
+       $Street1 = $_POST['Street1'];  
+       $Street2 = $_POST['Street2']; 
+       $City = $_POST['City'];
+       $ZipCode = $_POST['ZipCode']; 
+       $Phone = $_POST['Phone']; 
+       $Notes = $_POST['Notes'];
+       
+       
        $PW = $_POST['Password'];
        
        $StorePassword = password_hash($PW, PASSWORD_BCRYPT, array('cost' => 10));
        
-       $query = "INSERT INTO users (Fname, Lname, Email, Password) VALUES ('$FName', '$LName','$Email', '$PW')";
+       $query = "INSERT INTO users (Fname, Lname, Email, Street1, Street2, City, ZipCode, Phone, Notes, Password) VALUES ('$FName', '$LName','$Email', '$Street1', '$Street2', '$City', '$ZipCode', '$Phone', '$Notes', '$PW')";
        $results = $local->query($query) or die($local->error);
        //header('Location: login.php');
         echo 'UserID = '.$row['UserID'];
@@ -53,9 +61,7 @@
         </div>
         <div class="right-body">
             <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
+  
             
             <form action="" method="post" name="RegisterForm" id="RegisterForm">
                 <div class="formElement">
@@ -66,6 +72,24 @@
                 </div>
                 <div class="formElement">
                     <input type="text" name="Email" required="required" class="TField" id="Email" placeholder="Email"/>
+                </div>
+                  <div class="formElement">
+                    <input type="text" name="Street1" required="required" class="TField" id="Street1" placeholder="Street1"/>
+                </div>
+                 <div class="formElement">
+                    <input type="text" name="Street2"  class="TField" id="Street2" placeholder="Street2"/>
+                </div>
+                 <div class="formElement">
+                    <input type="text" name="City" required="required" class="TField" id="City" placeholder="City"/>
+                </div>
+                 <div class="formElement">
+                    <input type="text" name="ZipCode" required="required" class="TField" id="ZipCode" placeholder="ZipCode"/>
+                </div>
+                 <div class="formElement">
+                    <input type="text" name="Phone" required="required" class="TField" id="Phone" placeholder="Phone"/>
+                </div>
+                 <div class="formElement">
+                    <input type="text" name="Notes"  class="TField" id="Notes" placeholder="Special Instructions about your address!"/>
                 </div>
                 <div class="formElement">
                     <input type="text" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>

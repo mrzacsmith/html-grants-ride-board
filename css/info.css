@@ -83,9 +83,38 @@ body {
     background-color: #ededed;
     bottom: 0;
     position: fixed;
+ }
+
+p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
 }
+
+address {
+    color: #8c0b42;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+    
+}
+
 .nope {
     font-size: 22px;
     line-height: 50px;
     font-weight: bold;
 }
+
+footer .footer-left {
+    float: left;
+    bottom: 0;
+    position: fixed;
+}
+
+footer .footer-right {
+    float: right;
+    text-align: center;
+    margin: 0 0 10px 10px;
+    
+}
+

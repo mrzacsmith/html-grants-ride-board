@@ -40,6 +40,7 @@
              <div class="map_location">
             <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
         </div>
+  
            <div class="map_location">
                <div id="map">
                    <iframe id="google_map" width="800" height="500" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
@@ -59,12 +60,22 @@
           coords = lat + ', ' + long;
 
         document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords + '&z=15&output=embed');
-    }
+        }
     
         document.getElementById('get_location').onclick = function() {
             navigator.geolocation.getCurrentPosition(c);
             return false;
         }
+        
+        function show_islocationenabled() {
+      var str = "No, geolocation is not supported.";
+
+      if (window.navigator.geolocation) {
+        str = "Yes, geolocation is supported.";
+      }
+
+      document.getElementsByTagName('div')[0].textContent = str;
+    }
         
     </script>
 

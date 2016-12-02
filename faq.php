@@ -51,18 +51,37 @@
                 </blockquote>
             </div>
             <div class="faq">
-                <p>Can I ride and drive at the same time?</p>
+                <p>The "Get My Location" button is not working!</p>
                 <blockquote>
-                    No.
+                    You need to make sure your geolocation is turned on, click this button to test your geolocation status. <br>
+                <p>
+                    <input type="button" onclick="show_islocationenabled();" value="Is Geolocation supported?" />
+                </p>
                 </blockquote>
             </div>
        
         </div>
-        <div class="footer">
-       
-        </div>
+
     </div>
     
+            <div class="footer">
+       
+        </div>
+                <?php
+                include("footer.php");
+?>
+    <script>
+        function show_islocationenabled() {
+          var str = "No, geolocation is not supported.";
+    
+          if (window.navigator.geolocation) {
+            str = "Yes, geolocation is supported.";
+          }
+    
+          document.getElementsByTagName('div')[0].textContent = str;
+        }
+        
+    </script>
 
 </body>
 </html>
