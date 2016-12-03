@@ -9,12 +9,13 @@
         
         // $StorePassword = password_hash($PW, PASSWORD_BCRYPT, array('cost' => 10));
         $result = $local->query("SELECT * FROM users WHERE Email='$Email' AND Password='$PW'"); 
-        
         # look to see that we got a UserID
         $row_cnt = $result->num_rows;
         if($row_cnt == 1){
             $row = $result->fetch_array(MYSQLI_BOTH);
             $_SESSION["UserID"] = $row['UserID'];
+            $_SESSION["Fname"] = $row['Fname'];
+            $_SESSION["Lname"] = $row['Lname'];
             header('Location:account');
         
         # We did not find a UserId so we echo an error

@@ -39,12 +39,18 @@
                 </nav>
             </div>
         </div>
-        <div class="left-body">
-            
-        </div>
-        <div class="right-body">
-            Your Account: <br>
-            <?php echo $_SESSION["UserID"]; ?>
+        <div class="welcome">
+           <div id="loggedIn">
+                Welcome: 
+            <!--<?php echo $_SESSION["UserID"]; ?>-->
+            <?php echo $_SESSION["Fname"]; ?>
+            <?php echo $_SESSION["Lname"]; ?> <br>
+            <?php echo "Today is " . date(l) . " " .date("m-d-Y"); ?> : 
+            <?php 
+                date_default_timezone_set("America/Denver");
+                echo date("h:i:sa"); 
+            ?>
+           </div>
  
         </div>
         <div class="footer">

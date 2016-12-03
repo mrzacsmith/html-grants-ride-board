@@ -3,7 +3,6 @@ body {
     padding: 0;
     background-color: #ededed;
 }
-
 .container {
     width: 800px;
     background-color: #ccc;
@@ -12,7 +11,6 @@ body {
     overflow: auto;
     margin: 40px auto;
 }
-
 .header {
     height: 100px;
     width: 200px;
@@ -20,11 +18,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .menu {
     height: 50px;
 }
-
 .main {
     width: 700px;
     color: #8c0b42;
@@ -63,7 +59,6 @@ body {
     height: 50px;
     background-color: #8c0b42;
 }
-
 .faq {
     background-color: #ededed;
     padding: 10px;
@@ -76,21 +71,21 @@ body {
 .logout {
     text-align: center;
 }
-
+#loggedIn {
+    font-size: 26px;
+}
 .footer {
     font-size: 25px;
     height: 100px;
     background-color: #ededed;
     bottom: 0;
-    position: fixed;
- }
-
+    position: fixed; 
+}
 p {
     color: black;
     font-size: 18px;
     font-family: 'Arial', sans-serif;
 }
-
 address {
     color: #8c0b42;
         font-family: Verdana, Geneva, sans-serif;
@@ -98,23 +93,19 @@ address {
         font-style: normal;
     
 }
-
 .nope {
     font-size: 22px;
     line-height: 50px;
     font-weight: bold;
 }
-
 footer .footer-left {
     float: left;
     bottom: 0;
     position: fixed;
 }
-
 footer .footer-right {
     float: right;
     text-align: center;
     margin: 0 0 10px 10px;
-    
 }
 
