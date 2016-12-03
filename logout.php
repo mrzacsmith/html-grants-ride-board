@@ -26,10 +26,7 @@
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="logout">Log out</a></a></li>    
-                    </ul>
-                </nav>
+                                </nav>
             </div>
         </div>
         <div class="logout">

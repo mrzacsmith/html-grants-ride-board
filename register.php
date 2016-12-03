@@ -22,9 +22,9 @@
        
        $query = "INSERT INTO users (Fname, Lname, Email, Street1, Street2, City, ZipCode, Phone, Notes, Password) VALUES ('$FName', '$LName','$Email', '$Street1', '$Street2', '$City', '$ZipCode', '$Phone', '$Notes', '$PW')";
        $results = $local->query($query) or die($local->error);
-       //header('Location: login.php');
-        echo 'UserID = '.$row['UserID'];
-        print_r($_SESSION);
+       header('Location: login.php');
+       echo 'UserID = '.$row['UserID'];
+       print_r($_SESSION);
     }
 
 ?>
