@@ -60,7 +60,7 @@
             <img src="img/car.jpg" width="800px" alt="">
         </div>
         <div class="right-body">
-            <br><br><br><br>
+            <br>
   
             
             <form action="" method="post" name="RegisterForm" id="RegisterForm">
@@ -92,7 +92,7 @@
                     <input type="text" name="Notes"  class="TField" id="Notes" placeholder="Special Instructions about your address!"/>
                 </div>
                 <div class="formElement">
-                    <input type="text" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
+                    <input type="password" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
                 </div>
                 <div class="formElement">
                     <input name="Register" type="submit" class="button" id="Register" value="Register" />

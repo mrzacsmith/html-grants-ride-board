@@ -13,10 +13,11 @@ body {
 }
 .header {
     height: 100px;
-    width: 200px;
-    background-image: url(../img/nmsug_little.jpg);
+    width: 800px;
+    background-image: url(../img/NMSUGrants_AggieRideClub.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto;
 }
 .menu {
     height: 50px;

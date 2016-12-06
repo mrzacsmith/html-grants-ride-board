@@ -16,6 +16,12 @@
             $_SESSION["UserID"] = $row['UserID'];
             $_SESSION["Fname"] = $row['Fname'];
             $_SESSION["Lname"] = $row['Lname'];
+            $_SESSION["Email"] = $row['Email'];
+            $_SESSION["Street1"] = $row['Street1'];
+            $_SESSION["Street2"] = $row['Street2'];
+            $_SESSION["City"] = $row['City'];
+            $_SESSION["ZipCode"] = $row['ZipCode'];
+            $_SESSION["Notes"] = $row['Notes'];
             header('Location:account');
         
         # We did not find a UserId so we echo an error
@@ -73,7 +79,7 @@
                     <input type="text" name="Email" required="required" class="TField" id="Email" placeholder="Email"/>
                 </div>
                 <div class="formElement">
-                    <input type="text" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
+                    <input type="password" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
                 </div>
                 <div class="formElement">
                     <input name="Login" type="submit" class="button" id="Login" value="Login" />

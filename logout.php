@@ -26,16 +26,14 @@
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
                     </ul>
-                                </nav>
+                </nav>
             </div>
         </div>
         <div class="logout">
             <h2>You have logged out!</h2>
         </div>
      
-        <div class="footer">
        
-        </div>
     </div>
     
 
