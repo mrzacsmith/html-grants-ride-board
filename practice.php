@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account</title>
+    <title>Practice location</title>
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
 </head>
@@ -42,13 +42,13 @@
            <div id="loggedIn">
                 Welcome: 
             <!--<?php echo $_SESSION["UserID"]; ?>-->
-            <?php echo $_SESSION["Fname"]; ?>
-            <?php echo $_SESSION["Lname"]; ?> <br>
-            <?php echo "Today is " . date(l) . " " .date("m-d-Y"); ?> : 
-            <?php 
-                date_default_timezone_set("America/Denver");
-                echo date("h:i:sa"); 
-            ?>
+            <!--<?php echo $_SESSION["Fname"]; ?>-->
+            <!--<?php echo $_SESSION["Lname"]; ?> <br>-->
+            <!--<?php echo "Today is " . date(l) . " " .date("m-d-Y"); ?> : -->
+            <!--<?php 
+              date_default_timezone_set("America/Denver");
+               echo date("h:i:sa"); 
+            ?>-->
             
            </div>
  
@@ -59,9 +59,9 @@
             </div>
             <div class="map_location">
                 <div id="map">
-                    <iframe id="google_map" width="800" height="500" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
+                    <iframe id="google_map" width="0" height="0" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
                 </div>
-                       
+                     <p id="coordinates"></p>  
                </div>
             </div>
         </div>
@@ -72,7 +72,9 @@
               coords = lat + ', ' + long;
 
               document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords + '&z=15&output=embed');
-            //   window.alert(coords);
+              console.log(coords);
+              document.getElementById('coordinates').innerHTML = "Your latitude is: " + lat + ", your longitude is: " + long + ".";
+              window.alert(coords);
                 
             }
         

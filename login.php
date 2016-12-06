@@ -22,6 +22,8 @@
             $_SESSION["City"] = $row['City'];
             $_SESSION["ZipCode"] = $row['ZipCode'];
             $_SESSION["Notes"] = $row['Notes'];
+            $_SESSION["Long"] = $row['Long'];
+            $_SESSION["Lat"] = $row['Lat'];
             header('Location:account');
         
         # We did not find a UserId so we echo an error

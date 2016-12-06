@@ -3,24 +3,25 @@
    // print_r($_POST);
     if(isset($_POST['Register'])) {
        
-    //   session_start();
+      session_start();
        
-       $FName = $_POST['First_Name'];
-       $LName = $_POST['Last_Name'];
-       $Email = $_POST['Email'];
-       $Street1 = $_POST['Street1'];  
-       $Street2 = $_POST['Street2']; 
-       $City = $_POST['City'];
-       $ZipCode = $_POST['ZipCode']; 
-       $Phone = $_POST['Phone']; 
-       $Notes = $_POST['Notes'];
+       $FName = $local->real_escape_string($_POST['First_Name']);
+       $LName = $local->real_escape_string($_POST['Last_Name']);
+       $Email = $local->real_escape_string($_POST['Email']);
+       $Street1 = $local->real_escape_string($_POST['Street1']);  
+       $Street2 = $local->real_escape_string($_POST['Street2']); 
+       $City = $local->real_escape_string($_POST['City']);
+       $ZipCode = $local->real_escape_string($_POST['ZipCode']); 
+       $Phone = $local->real_escape_string($_POST['Phone']); 
+       $Notes =$local->real_escape_string( $_POST['Notes']);
+      // $Long = $_POST['Long']; 
+       //$Lat = $_POST['Lat'];
        
-       
-       $PW = $_POST['Password'];
+       $PW = $local->real_escape_string($_POST['Password']);
        
        $StorePassword = password_hash($PW, PASSWORD_BCRYPT, array('cost' => 10));
        
-       $query = "INSERT INTO users (Fname, Lname, Email, Street1, Street2, City, ZipCode, Phone, Notes, Password) VALUES ('$FName', '$LName','$Email', '$Street1', '$Street2', '$City', '$ZipCode', '$Phone', '$Notes', '$PW')";
+       $query = "INSERT INTO users (Fname, Lname, Email, Street1, Street2, City, ZipCode, Phone, Notes,  Password) VALUES ('$FName', '$LName','$Email', '$Street1', '$Street2', '$City', '$ZipCode', '$Phone', '$Notes',  '$PW')";
        $results = $local->query($query) or die($local->error);
        header('Location: login.php');
        echo 'UserID = '.$row['UserID'];
@@ -91,6 +92,12 @@
                  <div class="formElement">
                     <input type="text" name="Notes"  class="TField" id="Notes" placeholder="Special Instructions about your address!"/>
                 </div>
+                 <div class="formElement">
+                    <input type="text" name="Long"  class="TField" id="Long" placeholder="Longitude"/>
+                </div>
+                <div class="formElement">
+                    <input type="text" name="Lat"  class="TField" id="Lat" placeholder="Latitude"/>
+                </div>
                 <div class="formElement">
                     <input type="password" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
                 </div>
@@ -99,7 +106,52 @@
                 </div>
             </form>
         </div>
-        <div class="footer">
+        
+  
+
+<!--//      class validate_email {-->
+<!--//              private $accepted_domains;-->
+<!--//             public function __construct() {-->
+<!--//                   //Set the accepted domains property-->
+<!--//                   $this->accepted_domains = array(-->
+<!--//                      'nmsu.edu');-->
+<!--//             }-->
+<!--//              //Validate email address by domain-->
+<!--//               //Checks if the email address belongs to an accepted domain-->
+            
+<!--//               public function validate_by_domain($Email) {-->
+<!--//                   //Get the domain from the email address-->
+<!--//                   $domain = $this->get_domain( trim( $Email ) );-->
+<!--//                   //Check if domain is accepted. -->
+<!--//                   if ( in_array( $domain, $this->accepted_domains ) ) {-->
+<!--//                       return true;-->
+<!--// }-->
+<!--//               return false;-->
+<!--//           }-->
+            
+<!--//              //Get the domain from email address-->
+<!--//               private function get_domain($Email) {-->
+<!--//                  //Check if a valid email address was submitted-->
+<!--//                   if (! $this->is_email( $Email ) ) {-->
+<!--//                       return false;-->
+<!--//                  }-->
+<!--//                   $email_parts = explode( '@', $Email );-->
+<!--//                   $domain = array_pop( $email_parts );-->
+<!--//                  return $domain;-->
+<!--//                   }-->
+                
+<!--//                   //Checks if the submitted value is a valid email address-->
+<!--//                   private function is_email($Email) {-->
+<!--//                       if ( filter_var ( $Email, FILTER_VALIDATE_EMAIL ) ) {-->
+<!--//                          return true;-->
+<!--//                       }-->
+<!--//                       return false;-->
+<!--//                   }-->
+<!--//               }-->
+    
+        
+        
+      <div class="footer">
        
         </div>
     </div>
