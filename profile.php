@@ -67,7 +67,7 @@
   <!--  </div>-->
     
     <div id="test">
-        <form  align="center" method="post" name="update" id="update" action="update.php" />
+        <form  align="center" method="post" name="update" id="update"  />
             
             <div class="formElement">
                     <input type="text" name="Fname"  class="TField" id="Fname" value="<?php echo $_SESSION["Fname"]; ?>" placeholder="First Name"/>
@@ -104,10 +104,31 @@
                 </div>
 
                 <div class="formElement">
-                    <input name="Submit" type="submit" class="button" id="Submit" value="Update"  />
+                    <input name="Submit" type="submit" class="button" id="Submit" value="Update" action= "Update"  />
                     
- 
-                </div>
+                 <?php 
+                 //this gets the connection to allow updaste
+                 mysql_connect('localhost', 'zrsmith75', '') or     die(mysql_error());
+                 // verifies
+                 //echo "MySQL Connection Established! <br>";
+                 //selects db
+                 mysql_select_db("c9") or die(mysql_error());
+                 //verifies
+                 //echo "Database Found! <br>";
+                 
+               
+         
+                
+                mysql_query("UPDATE users SET Lat=".$Lat." WHERE UserID =".$_SESSION['UserID']."");
+
+                 
+                 
+                 ?>
+                 
+                 
+                 
+                 
+                </div> 
             </form>
     </div>
    <div class="main_location">
