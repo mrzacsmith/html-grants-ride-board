@@ -10,20 +10,3 @@ function validateEmail(form_id, email) {
     }
     
 }
-
-  function val() {
-            // alert("Working"); Test to make sure form is working 
-            if((RegisterForm.Password.value).length < 8) {
-                alert("Password should be a minimum of 8 characters.");
-                RegisterForm.password.focus();
-                return false;
-            }
-            if(RegisterForm.Password_Verify.value != RegisterForm.Password.value) {
-                alert("Passwords do not match!");
-                return false;
-            }
-            
-            
-        return true;
-        }
-        

@@ -56,13 +56,6 @@
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
                     </ul>
-                    <!--<ul>-->
-                    <!--    <li><a href="logout">Log out</a></a></li>    -->
-                    <!--</ul>-->
-                     <div class="nope">
-                        <!--Print no user found -->
-                        <?php echo $nope ?>    
-                    </div>
                 </nav>
             </div>
         </div>
@@ -76,31 +69,8 @@
         </div>
        
         <div class="right-body">
-            <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
-            <br><br><br><br>
-            <form action="" method="post" name="LoginForm" id="LoginForm">
-                <div class="formElement">
-                    <input type="text" name="Email" required="required" class="TField" id="Email" placeholder="Email"/>
-                </div>
-                <div class="formElement">
-                    <input type="password" name="Password" required="required" class="TField" id="Password" placeholder="Password"/>
-                </div>
-                <div class="formElement">
-                    <input name="Login" type="submit" class="button" id="Login" value="Login" />
-                </div>
-            </form>
-            <br><br><br><br><br>
-            <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
         </div>
-       
-        <div id="disclaimer">
-           
-            Copyright 2016 ~ Developers of ICT435 Senior Project
-        </div>
-    
+
 
 </body>
 </html>

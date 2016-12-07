@@ -32,5 +32,5 @@
 + Color support purple: #7f4498
  
 ##Links
-+ [NMSU Grants Ride Board](https://grants-ride-board-zrsmith75.c9users.io/register)
++ [NMSU Grants Ride Board](https://grants-ride-board-zrsmith75.c9users.io/index)
 + [Project Todo List](https://github.com/zrsmith75/ICT435_Senior_Project/blob/master/Todo.md)

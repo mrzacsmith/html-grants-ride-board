@@ -63,8 +63,6 @@
             </div>
         </div>
         <div class="left-body">
-            
-            <!--<img src="img/car.jpg" width="800px" alt="">-->
             <div id="instructions">                        <!-- geo button -->
               Instructions go here <br>
                <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
@@ -183,25 +181,6 @@
     
         
         
-
-
-
-    
-    <!-- get location -->
-    <!--<div class="main_location">-->
-            <!--<div class="map_location">-->
-            <!--    <div class="formElement">-->
-            <!--        <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />-->
-            <!--    </div>-->
-            <!--</div>-->
-    <!--        <div class="map_location">-->
-    <!--            <div id="map">-->
-    <!--                <iframe id="google_map" width="0" height="0" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>-->
-                
-    <!--                 <p id="coordinates"></p>  -->
-    <!--           </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
         <script>
             var c = function(pos) {
             var lat = pos.coords.latitude,
@@ -243,8 +222,6 @@
             
         return true;
         }
-        
-        
         
     </script>
 

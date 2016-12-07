@@ -55,19 +55,17 @@
                 <div class="formElement">
                     <input type="text" name="Email"  class="TField" id="Email" value="<?php echo $_SESSION["Email"]; ?>" placeholder="Email"/>
                 </div>
-                
-                
+
+                <div class="formElement">
+                    <input type="text" name="Lat"  class="TField" id="Lat" value="<?php echo $_SESSION["Lat"]; ?>" placeholder="Latitude"/>
+                </div>
                 <div class="formElement">
                     <input type="text" name="Lon"  class="TField" id="Lon" value="<?php echo $_SESSION["Lon"]; ?>" placeholder="Longitude "/>
                 </div>
                 <div class="formElement">
-                    <input type="text" name="Lat"  class="TField" id="Lat" value="<?php echo $_SESSION["Lat"]; ?>" placeholder="Latitude"/>
-                </div>
-                
-                <div class="formElement">
                     <input type="text" name="Street1"  class="TField" id="Street1" value="<?php echo $_SESSION["Street1"]; ?>" placeholder="Street 2"/>
                 </div>
-              <div class="formElement">
+                <div class="formElement">
                     <input type="text" name="Street2"  class="TField" id="Street2" value="<?php echo $_SESSION["Street2"]; ?>" placeholder="Street 2"/>
                 </div>
                 <div class="formElement">

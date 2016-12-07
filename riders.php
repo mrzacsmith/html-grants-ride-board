@@ -48,7 +48,8 @@
                 <div id="map">
                     <iframe id="google_map" width="800" height="800" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
                 </div>
-                 <script>
+                
+                <script>
                     function initMap() {
                       var uluru = {lat: 35.166559, lng: -107.843142};
                       var map = new google.maps.Map(document.getElementById('map'), {
@@ -61,14 +62,46 @@
                       });
                     }
                   </script>
+                 
                   <script async defer
-              	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAttvBtlHvLpEm6mDgiooDBxYyVrlpCVdY&callback=initMap">
+              	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAttvBtlHvLpEm6mDgiooDBxYyVrlpCVdY&callback=initMap" type="text/javascript">
+              	    
+              	    
                   </script> 
-                  <?php
-                  $servername = "localhost";
-                  $username ="zrsmith75";
-                  $password ="";
+                 
                   
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <?php
+                  
+                        $username = "zrsmith75";
+                        $password = "";
+                        $hostname = "localhost"; 
+                        $dbname = "c9";
+
+                        //connection to the database
+                       $dbcon = mysql_connect("$host","$username","$password");
+mysql_select_db("$dbname");
+                        
+                        
+                    
+?>
+<?php
 $query = mysql_query("SELECT * FROM users")or die(mysql_error());
 while($row = mysql_fetch_array($query))
 {
@@ -76,14 +109,15 @@ while($row = mysql_fetch_array($query))
   $Lat = $row['Lat'];
   $Lon = $row['Lon'];
   $desc = $row['desc'];
-
-
-
-  echo("addMarker($Lat, $Lon, '<b>$UserID</b><br />$desc');\n");
+    echo("addMarker($Lat, $Lon, '<b>$UserID</b><br />$desc');\n");
 
 }
 
 ?>
+
+
+
+ 
             </div>
         </div>
 </body>
