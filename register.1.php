@@ -118,6 +118,23 @@
                     <input name="Reset" type="reset" class="button" id="Reset" value="Reset"/>
                 </div>
             </form>
+            
+            <script>
+                function checkEmail() {
+                    var email = document.getElementById('txtEmailID').value;
+                    var filter = /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!live.com)(?!hotmail.com)([\w-]+\.)+[\w-]{2,4})?$/
+
+                    if (!filter.test(email)) {
+                        alert('Please enter a valid NMSU email address');
+                        return false;
+                    }
+                    else {
+                        alert('You have entered a valid NMSU email address');
+                    }
+                    
+                    }
+            </script>
+            
          <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
         </div>
         <div id="disclaimer">
@@ -171,29 +188,6 @@
 
     </div>
  
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script>
-    
-
-        function val() {
-            // alert("Working"); Test to make sure form is working 
-            if((RegisterForm.Password.value).length < 8) {
-                alert("Password should be a minimum of 8 characters.");
-                RegisterForm.password.focus();
-                return false;
-            }
-            if(RegisterForm.Password_Verify.value != RegisterForm.Password.value) {
-                alert("Passwords do not match!");
-                return false;
-            }
-            
-            
-        return true;
-        }
-        
-        
-        
-    </script>
 
 </body>
 </html>

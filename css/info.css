@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ededed;
+    font-family: 'Raleway', sans-serif;
 }
 .container {
     width: 800px;
@@ -30,7 +31,7 @@ body {
     margin: 0 auto;
 }
 .main_location {
-    background: red;
+    /*background: red;*/
     width: 800px;
     margin: 0 auto;
 }
@@ -77,6 +78,7 @@ body {
 }
 #loggedIn {
     font-size: 26px;
+    padding: 5px 0 0 5px;
 }
 #instructions {
     font-size: 22px;
@@ -89,6 +91,7 @@ body {
     bottom: 0;
     position: fixed; 
 }
+
 p {
     color: black;
     font-size: 18px;
@@ -96,7 +99,7 @@ p {
 }
 address {
     color: #8c0b42;
-        font-family: Verdana, Geneva, sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-style: normal;
 }
@@ -113,9 +116,33 @@ address {
 }
 #footer_info {
     padding-left: 25px;
+    font-family: 'Raleway', sans-serif;
 }
 #footer_disclaimer {
     padding-top: 22px;
     padding-left: 25px;
+    font-family: 'Belleza', sans-serif;
 }
-
+#twitter_feed {
+    margin: 0 auto;
+}
+.fb-like {
+    padding-bottom: 4px;
+}
+#first {
+    width: 390px;
+    height; 200px;
+    float: left;
+    margin: 5px 0 0 5px;
+    padding-top: 10px;
+}
+#second {
+    width: 390px;
+    height: 200px;
+    float: right;
+    margin: 5px 5px 0 0;
+    padding-top: 10px;
+}
+#clear {
+    clear: both;
+}

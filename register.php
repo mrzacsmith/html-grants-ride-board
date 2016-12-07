@@ -37,6 +37,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
     <meta charset="UTF-8">
@@ -127,7 +128,7 @@
                     <input type="password" name="Password_Verify" required="required" class="TField" id="Password_Verify" placeholder="Password Verify"/> 
                 </div>
                 <div class="formElement">
-                    <input name="Register" type="submit" class="button" id="Register" value="Register" onclick="return val();" />
+                    <input name="Register" type="submit" class="button" id="Register" value="Register" onclick="return validatePassword();" />
                     <input name="Reset" type="reset" class="button" id="Reset" value="Reset"/>
                 </div>
             </form>
@@ -207,7 +208,7 @@
     <script>
     
 
-        function val() {
+        function validatePassword() {
             // alert("Working"); Test to make sure form is working 
             if((RegisterForm.Password.value).length < 8) {
                 alert("Password should be a minimum of 8 characters.");

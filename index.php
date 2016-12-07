@@ -37,8 +37,11 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
+    
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
+    
     <meta charset="UTF-8">
     <title>Login</title>
 </head>

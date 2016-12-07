@@ -18,8 +18,17 @@
     <title>Account</title>
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
      <div class="container">
         <div class="header">
             
@@ -54,35 +63,31 @@
  
         </div>
         <div class="main_location">
-            <div class="map_location">
-                <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
+            <div id="first">
+                <center>
+                    <a href="https://twitter.com/NMSUGrants" class="twitter-follow-button" data-show-count="false">Follow @NMSUGrants</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> <a href="https://twitter.com/intent/tweet?screen_name=NMSUGrants" class="twitter-mention-button" data-show-count="false">Tweet to @NMSUGrants</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </center>
+                <a class="twitter-timeline" data-width="390" data-height="1000" href="https://twitter.com/NMSUGrants">Tweets by NMSUGrants</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="map_location">
-                <div id="map">
-                    <iframe id="google_map" width="800" height="500" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
-                </div>
-                       
-               </div>
+            <div id="second">
+                <div class="fb-like" data-href="https://www.facebook.com/NMSUGrantsStudentServices/" data-width="390" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                <div class="fb-page" data-href="https://www.facebook.com/NMSUGrantsStudentServices/" data-tabs="timeline" data-width="390" data-height="1000" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/NMSUGrantsStudentServices/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/NMSUGrantsStudentServices/">NMSU Grants Student Services</a></blockquote></div>
             </div>
-        </div>
-        <script>
-            var c = function(pos) {
-            var lat = pos.coords.latitude,
-              long = pos.coords.longitude,
-              coords = lat + ', ' + long;
-
-              document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords + '&z=15&output=embed');
-            //   window.alert(coords);
-                
-            }
+            <div id="clear"></div>
+            
+            
+            
+            <!--<div id="twitter_feed">-->
+            <!--         <center>-->
+                <!--<a class="twitter-timeline" data-width="600" data-height="600" data-theme="dark" href="https://twitter.com/NMSUGrants">Tweets by NMSUGrants</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>            -->
+                    <!--<a href="https://twitter.com/NMSUGrants" class="twitter-follow-button" data-show-count="false">Follow @NMSUGrants</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> <a href="https://twitter.com/intent/tweet?screen_name=NMSUGrants" class="twitter-mention-button" data-show-count="false">Tweet to @NMSUGrants</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+               
+            <!--        <a class="twitter-timeline" data-width="600" href="https://twitter.com/NMSUGrants">Tweets by NMSUGrants</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>            -->
+            <!--    </center>-->
+            <!--</div>-->
+                    
         
-            document.getElementById('get_location').onclick = function() {
-                navigator.geolocation.getCurrentPosition(c);
-                return false;
-            }
-            
-
-            
-        </script>
+        </div>
+  
 </body>
 </html>

@@ -7,13 +7,14 @@
         header('Location: login.php');
     }
 ?>
+      
 <!doctype html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
     <meta charset="UTF-8">
-    <title>Riders</title>
+    <title>Register</title>
      <style>
        #map {
         height: 400px;
@@ -33,7 +34,7 @@
             <div id="menu">
                 <nav>
                     <ul id="cssmenu">
-                        <li><a href="account">Home</a></li>
+                        <li><a href="location">Get Location</a></li>
                         <li><a href="riders">Riders</a></a></li>
                         <li><a href="profile">Profile</a></li>
                     </ul>
@@ -43,82 +44,60 @@
                 </nav>
             </div>
         </div>
-          <div class="main_location">
-            <div class="map_location">
-                <div id="map">
-                    <iframe id="google_map" width="800" height="800" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
-                </div>
-                
-                <script>
-                    function initMap() {
-                      var uluru = {lat: 35.166559, lng: -107.843142};
-                      var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 10,
-                        center: uluru
-                      });
-                      var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map
-                      });
-                    }
-                  </script>
-                 
-                  <script async defer
-              	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAttvBtlHvLpEm6mDgiooDBxYyVrlpCVdY&callback=initMap" type="text/javascript">
-              	    
-              	    
-                  </script> 
-                 
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <?php
-                  
-                        $username = "zrsmith75";
-                        $password = "";
-                        $hostname = "localhost"; 
-                        $dbname = "c9";
-
-                        //connection to the database
-                       $dbcon = mysql_connect("$host","$username","$password");
-mysql_select_db("$dbname");
-                        
-                        
-                    
-?>
+ <!DOCTYPE html>
 <?php
-$query = mysql_query("SELECT * FROM users")or die(mysql_error());
-while($row = mysql_fetch_array($query))
-{
-  $UserID = $row['UserID'];
-  $Lat = $row['Lat'];
-  $Lon = $row['Lon'];
-  $desc = $row['desc'];
-    echo("addMarker($Lat, $Lon, '<b>$UserID</b><br />$desc');\n");
-
-}
-
-?>
-
-
-
  
-            </div>
-        </div>
+  include 'connect.php';
+ 
+  $apikey = "your_key_here";
+  $id = $_GET['id'];
+ 
+  $lat = 0;
+  $long = 0;
+  $zoom = 8;
+ 
+  $findmap = "SELECT Lat, Lon, zoom FROM users WHERE UserID = $UserID";
+ 
+  if(!$result = $con->query($findmap)){
+     die('There was an error running the query [' . $con->error . ']');
+  } else {
+    $row = $result->fetch_assoc();
+    $lat = $row['centerLat'];
+    $long = $row['centerLong'];
+    $zoom = $row['zoom'];
+  }   
+ 
+?><!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport"
+        content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=
+          <?php echo $apikey; ?>&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(<?php echo $lat.', '.$long; ?>),
+          zoom: <?php echo $zoom; ?>
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"/>
+  </body>
+</html>
+    
+
 </body>
 </html>

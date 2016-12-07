@@ -8,7 +8,7 @@
  + Allow profile modification to include name, address, telephone number and times for scheduling
  + Allow for new user account restriction to @nmsu.edu email ONLY
  + Complete the project during the semester
- + Complete the project using HTML5, CSS3, Ruby on Rails, JavaScript, Postgress DB
+ + Complete the project using HTML5, CSS3, Php, JavaScript, MySQL
 
 ##Team
  + Zac Smith ~ Lead
