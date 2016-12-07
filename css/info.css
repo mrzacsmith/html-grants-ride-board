@@ -13,21 +13,24 @@ body {
 }
 .header {
     height: 100px;
-    width: 800px;
+    width:740px;
     background-image: url(../img/NMSUGrants_AggieRideClub.png);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    padding: 35px 0 0 55px;
 }
 .menu {
     height: 50px;
 }
 .main {
+    background-image: url(../img/car.jpg);
     width: 700px;
     color: #8c0b42;
     margin: 0 auto;
 }
 .main_location {
+    background: red;
     width: 800px;
     margin: 0 auto;
 }
@@ -45,19 +48,19 @@ body {
 .formElement {
     width: 350px;
     margin: 6px auto;
-    height: 45px;
+    height: 35px;
 }
 .TField {
     width: 350px;
-    height: 35px;
+    height: 32px;
     border: 1px solid #e0dfdf;
     padding-left: 6px;
     font-size: 17px;
 }
 .button {
     font-size: 25px;
-    width:200px;
-    height: 50px;
+    width:170px;
+    height: 45px;
     background-color: #8c0b42;
 }
 .faq {
@@ -74,6 +77,10 @@ body {
 }
 #loggedIn {
     font-size: 26px;
+}
+#instructions {
+    font-size: 26px;
+    padding: 10px 0 0 25px;
 }
 .footer {
     font-size: 25px;
@@ -92,21 +99,21 @@ address {
         font-family: Verdana, Geneva, sans-serif;
         font-size: 16px;
         font-style: normal;
-    
 }
 .nope {
     font-size: 22px;
     line-height: 50px;
     font-weight: bold;
 }
-footer .footer-left {
-    float: left;
-    bottom: 0;
-    position: fixed;
-}
-footer .footer-right {
-    float: right;
+#disclaimer {
+    background-color: #ffcc33;
     text-align: center;
-    margin: 0 0 10px 10px;
+    vertical-align: middle;
+}
+#footer_info {
+    padding-left: 25px;
+}
+#footer_disclaimer {
+    padding-top: 22px;
 }
 

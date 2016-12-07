@@ -1,17 +1,7 @@
-<?php 
-    require 'connections/connections.php';
-    //print_r($_SESSION);
+<?php require 'connections/connections.php'; ?>
 
-    //session_start();
-    if(isset($_SESSION["UserID"])) {
-        
-    } else {
-        header('Location: login.php');
-    }
-    
-?>
 
-  
+
 
 
 <!doctype html>
@@ -20,7 +10,7 @@
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Profile </title>
 </head>
 <body>
 
@@ -49,25 +39,12 @@
          
   
   
-      <p style="font-size: 30px; color: yellow;">Profile Info: </p>
-  <!--    <table>-->
-  <!--<tr>-->
-       
- 
-            <!--<?php echo $_SESSION["UserID"]; ?>-->
-  <!--         <th>  <?php echo $_SESSION["Fname"]; ?> -->
-  <!--          <?php echo $_SESSION["Lname"];?></th> <br>-->
-  <!--           <th> <?php echo $_SESSION["Email"]; ?></th>-->
-  <!--         <th> <?php echo $_SESSION["Street1"]; ?>-->
-  <!--            <?php echo $_SESSION["Street2"]; ?>-->
-  <!--          <?php echo $_SESSION["City"]; ?></th> -->
-  <!--  </tr>-->
-  <!--      </div>-->
+      <p style="font-size: 30px; color: yellow;">Profile Info:      </p>
       
-  <!--  </div>-->
+  
     
     <div id="test">
-        <form  align="center" method="post" name="update" id="update"  />
+        <form  align="center" method="GET" name="update" id="update"  />
             
             <div class="formElement">
                     <input type="text" name="Fname"  class="TField" id="Fname" value="<?php echo $_SESSION["Fname"]; ?>" placeholder="First Name"/>
@@ -81,7 +58,7 @@
                 
                 
                 <div class="formElement">
-                    <input type="text" name="City"  class="TField" id="Long" value="<?php echo $_SESSION["Long"]; ?>" placeholder="Longitude "/>
+                    <input type="text" name="Lon"  class="TField" id="Lon" value="<?php echo $_SESSION["Lon"]; ?>" placeholder="Longitude "/>
                 </div>
                 <div class="formElement">
                     <input type="text" name="Lat"  class="TField" id="Lat" value="<?php echo $_SESSION["Lat"]; ?>" placeholder="Latitude"/>
@@ -103,40 +80,19 @@
                     <input type="text" name="Notes"  class="TField" id="Notes" value="<?php echo $_SESSION["Notes"]; ?>" placeholder="Notes"/>
                 </div>
 
-                <div class="formElement">
-                    <input name="Submit" type="submit" class="button" id="Submit" value="Update" action= "Update"  />
-                    
-                 <?php 
-                 //this gets the connection to allow updaste
-                 mysql_connect('localhost', 'zrsmith75', '') or     die(mysql_error());
-                 // verifies
-                 //echo "MySQL Connection Established! <br>";
-                 //selects db
-                 mysql_select_db("c9") or die(mysql_error());
-                 //verifies
-                 //echo "Database Found! <br>";
-                 
-               
-         
-                
-                mysql_query("UPDATE users SET Lat=".$Lat." WHERE UserID =".$_SESSION['UserID']."");
-
-                 
-                 
-                 ?>
-                 
-                 
-                 
-                 
-                </div> 
+               <!-- <div class="formElement">
+                    <input name="Update" type="submit" class="button" id="Update" value="Update" />
+                    <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
+                </div>
+                -->
             </form>
     </div>
    <div class="main_location">
-            <div class="map_location">
-                <div class="formElement">
-                    <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
-                </div>
-            </div>
+            <!--<div class="map_location">-->
+            <!--    <div class="formElement">-->
+            <!--        <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />-->
+            <!--    </div>-->
+            <!--</div>-->
             <div class="map_location">
                 <div id="map">
                     <iframe id="google_map" width="0" height="0" scrolling="0" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed" frameborder="0"></iframe>
@@ -153,7 +109,7 @@
 
               document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords + '&z=15&output=embed');
               console.log(coords);
-              document.getElementById('coordinates').innerHTML = "Please copy and paste your <br>coordinates in your profile form! <br>Your latitude is: <strong><em>" + lat + "</em></strong>,<br> your longitude is: <strong><em>" + long + "</em></strong>.";
+              document.getElementById('coordinates').innerHTML = "Please copy and paste your <br>coordinates in your profile form! <br>Your latitude is: <strong><em>" + lat + "</em></strong><br> your longitude is: <strong><em>" + long + "</em></strong>";
             //   window.alert(coords);
                 
             }

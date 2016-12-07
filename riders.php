@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Riders</title>
      <style>
        #map {
         height: 400px;
@@ -63,7 +63,27 @@
                   </script>
                   <script async defer
               	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAttvBtlHvLpEm6mDgiooDBxYyVrlpCVdY&callback=initMap">
-                  </script>      
+                  </script> 
+                  <?php
+                  $servername = "localhost";
+                  $username ="zrsmith75";
+                  $password ="";
+                  
+$query = mysql_query("SELECT * FROM users")or die(mysql_error());
+while($row = mysql_fetch_array($query))
+{
+  $UserID = $row['UserID'];
+  $Lat = $row['Lat'];
+  $Lon = $row['Lon'];
+  $desc = $row['desc'];
+
+
+
+  echo("addMarker($Lat, $Lon, '<b>$UserID</b><br />$desc');\n");
+
+}
+
+?>
             </div>
         </div>
 </body>

@@ -22,7 +22,7 @@
             $_SESSION["City"] = $row['City'];
             $_SESSION["ZipCode"] = $row['ZipCode'];
             $_SESSION["Notes"] = $row['Notes'];
-            $_SESSION["Long"] = $row['Long'];
+            $_SESSION["Lon"] = $row['Lon'];
             $_SESSION["Lat"] = $row['Lat'];
             header('Location:account');
         
@@ -69,7 +69,12 @@
         <div class="left-body">
         
             <img src="img/car.jpg" width="800px"></img>
+            <p id="footer_info"><strong>NMSU Grants Ride Board</strong><br>
+            1500 N Third St <br>
+            Grants, NM 87020 <br>
+            505-287-6656</p>
         </div>
+       
         <div class="right-body">
             <br><br><br><br>
             <br><br><br><br>
@@ -87,11 +92,14 @@
                     <input name="Login" type="submit" class="button" id="Login" value="Login" />
                 </div>
             </form>
+            <br><br>
+            <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
         </div>
-        <div class="footer">
        
+        <div id="disclaimer">
+            <br><br><br>
+            Copyright 2016 ~ Developers of ICT435 Senior Project
         </div>
-    </div>
     
 
 </body>
