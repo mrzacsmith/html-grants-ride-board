@@ -19,9 +19,6 @@
  + Michael Romero
  
 
-##Specs
- 
-
 ##NMSU Specs
 + Color code Crimson: #8c0b42
 + Color code Web Gray: #ccc
@@ -33,4 +30,5 @@
  
 ##Links
 + [NMSU Grants Ride Board](https://grants-ride-board-zrsmith75.c9users.io/index)
-+ [Project Todo List](https://github.com/zrsmith75/ICT435_Senior_Project/blob/master/Todo.md)
++ [Project Todo List Google Drive](https://github.com/zrsmith75/ICT435_Senior_Project/blob/master/Todo.md)
++ [Senior Project Forum](https://calm-headland-31763.herokuapp.com/)

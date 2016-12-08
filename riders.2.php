@@ -46,60 +46,23 @@
         <div id="map"></div>
           <script>
             function initMap() {
-              var uluru = {lat: 33.664354, lng: -105.897217};
+              var uluru = {lat: 35.166559, lng: -107.843142};
               var address1 = {lat: 35.145043, lng: -107.827740};
               var address2 = {lat: 35.155682, lng: -107.856132};
               var address3 = {lat: 36.804752, lng: -108.693662};
               var address4 = {lat: 32.357212, lng: -106.769846};
               var address5 = {lat: 35.168734, lng: -106.574941};
-              var address6 = {lat: 32.420980, lng: -104.256174};
-              var address7 = {lat: 35.141747, lng: -107.875665};
-              var address8 = {lat: 35.166559, lng: -107.843142};
               
               var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 6,
+                zoom: 8,
                 center: uluru
               });
               var marker = new google.maps.Marker({
-                position: address8,
-                map: map,
-                title:"NMSU Grants"
-              });
-             var marker = new google.maps.Marker({
+                postion: uluru;
                 position: address5,
-                map: map,
-                title:"6613 Pino Ave"
+                map: map
               });
-              var marker = new google.maps.Marker({
-                position: address1,
-                map: map,
-                title:"611 Oso Ridge Rd"
-              });
-              var marker = new google.maps.Marker({
-                position: address2,
-                map: map,
-                title:"308 Vernon Ave"
-              });
-              var marker = new google.maps.Marker({
-                position: address3,
-                map: map,
-                title:"1416 Pinon St"
-              });
-              var marker = new google.maps.Marker({
-                position: address4,
-                map: map,
-                title:"1922 Mercury Ln"
-              });
-              var marker = new google.maps.Marker({
-                position: address6,
-                map: map,
-                title:"112 MacArthur St"
-              });
-              var marker = new google.maps.Marker({
-                position: address7,
-                map: map,
-                title:"2850 Ice Caves Rd"
-              });
+             
             }
           </script>
           <script async defer

@@ -63,6 +63,7 @@ body {
     width:170px;
     height: 45px;
     background-color: #8c0b42;
+    font-family: 'Raleway', sans-serif;
 }
 .faq {
     background-color: #ededed;
@@ -95,7 +96,8 @@ body {
 p {
     color: black;
     font-size: 18px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 address {
     color: #8c0b42;
@@ -121,7 +123,7 @@ address {
 #footer_disclaimer {
     padding-top: 22px;
     padding-left: 25px;
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 #twitter_feed {
     margin: 0 auto;

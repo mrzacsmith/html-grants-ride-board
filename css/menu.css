@@ -4,6 +4,7 @@
     clear: both;
     background-color: #eee;
     border-bottom: 3px solid black;
+      font-family: 'Cinzel', sans-serif;
     
 }
 
@@ -15,7 +16,7 @@ nav li {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    font-family: 'Quattrocentro+Sans', sans-serif;
+    font-family: 'Cinzel', sans-serif;
     font-size: 24px;
     font-weight: lighter;
     
