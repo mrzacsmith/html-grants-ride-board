@@ -12,6 +12,7 @@
 <head>
     <link rel="stylesheet" href="css/info.css" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Belleza|Cinzel" rel="stylesheet" >
     <meta charset="UTF-8">
     <title>Riders</title>
      <style>
@@ -33,12 +34,11 @@
             <div id="menu">
                 <nav>
                     <ul id="cssmenu">
-                        <li><a href="location">Get Location</a></li>
+                        <li><a href="account">Home</a></li>
                         <li><a href="riders">Riders</a></a></li>
                         <li><a href="profile">Profile</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="logout">Log out</a></a></li>    
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="logout">Log out</a></li>
                     </ul>
                 </nav>
             </div>
@@ -107,6 +107,8 @@
           </script>
     </div>
     
-
+                <div id="disclaimer">
+            &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
+        </div>
 </body>
 </html>

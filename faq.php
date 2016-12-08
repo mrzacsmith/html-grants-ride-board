@@ -29,13 +29,16 @@
                         <li><a href="register">Register</a></li>
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
+                        <li><a href="contact">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="main">
+            <br>
+             <center><img src="../img/pete.png" alt="Pete" width="300" height="150"></center>
             <h1>Aggie Ride Board FAQ</h1>
-             <div class="faq">
+                          <div class="faq">
                 <p>What is the purpose of the Aggie Ride Board?</p>
                 <blockquote>
                     The Ride Board is a carpool service for students. Carpooling provides students to reduce transportation costs
@@ -102,14 +105,16 @@
                     NMSU is not liable for any lost or stolen items from Riders or Drivers.
                 </blockquote>
             </div>
-
+            </div>
+             <div id="disclaimer">
+            &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
+        </div>
        
         </div>
 
-    </div>
-    
-            <div class="footer">
+               <div class="footer">
                </div>
+
                 <?php
                 include("footer.php");
                 ?>
@@ -126,6 +131,7 @@
         }
         
     </script>
-
+        
+        
 </body>
 </html>

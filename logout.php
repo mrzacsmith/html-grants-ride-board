@@ -26,17 +26,21 @@
                         <li><a href="register">Register</a></li>
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
+                        <li><a href="contact">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="logout">
+        <div id="logout">
             <h2>You have logged out!</h2>
+
         </div>
      
        
     </div>
-    
+    <div id="disclaimer">
+        &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
+    </div>
 
 </body>
 </html>

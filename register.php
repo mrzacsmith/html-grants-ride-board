@@ -47,8 +47,8 @@
 
     <div class="container">
         <div class="header">
-            
         </div>
+    
         <div class="menu">
             <div id="menu">
                 <nav>
@@ -56,6 +56,7 @@
                         <li><a href="register">Register</a></li>
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
+                        <li><a href="contact">Contact Us</a></li>
                     </ul>
                     <!--<ul id="logout">-->
                     <!--    <li><a href="logout">Log out</a></a></li>    -->
@@ -63,9 +64,21 @@
                 </nav>
             </div>
         </div>
+
+
+
         <div class="left-body">
+            <br><br><br>
+            
             <div id="instructions">                        <!-- geo button -->
-              Instructions go here <br>
+              <strong>Welcome!</strong><br>
+              Here are some instructions to get you started:<br>
+              1. Click on the Get Location Button.<br>
+              2. Copy and paste the coordinates into the registration form.<br>
+              3. Complete all fields on the Registration Form.<br>
+              <u>PLEASE NOTE:</u> A Current NMSU email account must be used.<br>
+              4. Log into your account.<br><br>
+              
                <input type="submit" name="get_location" class="button" id="get_location" value="Get Location" />
                    <div class="map_location">
                       <div id="map">
@@ -75,17 +88,24 @@
                       </div>
                   </div>
             </div>
+            <!--<br>
             <br>
-            <p id="footer_info"><strong>NMSU Grants Ride Board</strong><br>
+            <br>-->
+               
+
+            
+        <!--    <p id="footer_info"><strong>NMSU Grants Ride Board</strong><br>
                 1500 N Third St <br>
                 Grants, NM 87020 <br>
-                505-287-6656</p>
+                505-287-6656</p>-->
+                
         </div>
+        
         
 
         <div class="left-body">
-      
-        
+      <br>
+        <br>
             <form method="post" name="RegisterForm" id="RegisterForm" action="" onsubmit="javascript:return validateEmail('RegisterForm','Email');">
                 <div class="formElement">
                     <input type="text" name="First_Name" required="required" class="TField" id="First_Name" placeholder="First Name"/>
@@ -131,56 +151,18 @@
                     <input name="Register" type="submit" class="button" id="Register" value="Register" onclick="return validatePassword();" />
                     <input name="Reset" type="reset" class="button" id="Reset" value="Reset"/>
                 </div>
-            </form>
-         <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
-        </div>
-        <div id="disclaimer">
-               Copyright 2016 ~ Developers of ICT435 Senior Project
+            
             </div>
-        
-  
-
-<!--//      class validate_email {-->
-<!--//              private $accepted_domains;-->
-<!--//             public function __construct() {-->
-<!--//                   //Set the accepted domains property-->
-<!--//                   $this->accepted_domains = array(-->
-<!--//                      'nmsu.edu');-->
-<!--//             }-->
-<!--//              //Validate email address by domain-->
-<!--//               //Checks if the email address belongs to an accepted domain-->
             
-<!--//               public function validate_by_domain($Email) {-->
-<!--//                   //Get the domain from the email address-->
-<!--//                   $domain = $this->get_domain( trim( $Email ) );-->
-<!--//                   //Check if domain is accepted. -->
-<!--//                   if ( in_array( $domain, $this->accepted_domains ) ) {-->
-<!--//                       return true;-->
-<!--// }-->
-<!--//               return false;-->
-<!--//           }-->
+            </form>
+                <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL</p>
+                <!--<p id="footer_disclaimer"><h5 align="center"><strong><em>Contact Us</em></strong></h5><center>NMSU Grants Ride Board1500 N Third St Grants, NM 87020 <br>505-287-6656</center></p>-->
+            <div id="disclaimer">
+            &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
+        </div>
+ 
+            </div>
             
-<!--//              //Get the domain from email address-->
-<!--//               private function get_domain($Email) {-->
-<!--//                  //Check if a valid email address was submitted-->
-<!--//                   if (! $this->is_email( $Email ) ) {-->
-<!--//                       return false;-->
-<!--//                  }-->
-<!--//                   $email_parts = explode( '@', $Email );-->
-<!--//                   $domain = array_pop( $email_parts );-->
-<!--//                  return $domain;-->
-<!--//                   }-->
-                
-<!--//                   //Checks if the submitted value is a valid email address-->
-<!--//                   private function is_email($Email) {-->
-<!--//                       if ( filter_var ( $Email, FILTER_VALIDATE_EMAIL ) ) {-->
-<!--//                          return true;-->
-<!--//                       }-->
-<!--//                       return false;-->
-<!--//                   }-->
-<!--//               }-->
-    
-        
         
         <script>
             var c = function(pos) {
@@ -225,6 +207,10 @@
         }
         
     </script>
+ 
+        
+
+
 
 </body>
 </html>

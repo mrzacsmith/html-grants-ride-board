@@ -47,8 +47,8 @@
 
     <div class="container">
         <div class="header">
-            
         </div>
+        
         <div class="menu">
             <div id="menu">
                 <nav>
@@ -56,6 +56,7 @@
                         <li><a href="register">Register</a></li>
                         <li><a href="login">Log In</a></li>
                         <li><a href="faq">FAQ</a></li>
+                        <li><a href="contact">Contact Us</a></li>
                     </ul>
                     <!--<ul>-->
                     <!--    <li><a href="logout">Log out</a></a></li>    -->
@@ -67,21 +68,22 @@
                 </nav>
             </div>
         </div>
-        <div class="left-body">
+        <div class="center-body">
         
             <img src="img/car.jpg" width="800px"></img>
-            <p id="footer_info"><strong>NMSU Grants Ride Board</strong><br>
+          <!--  <p id="footer_info"><strong>NMSU Grants Ride Board</strong><br>
             1500 N Third St <br>
             Grants, NM 87020 <br>
-            505-287-6656</p>
-        </div>
+            505-287-6656</p>-->
+            
+        <!--</div>
        
-        <div class="right-body">
+        <div class="center-body">
             <br><br><br><br>
             <br><br><br><br>
             <br><br><br><br>
             <br><br><br><br>
-            <br><br><br><br>
+            <br><br><br><br>-->
             <form action="" method="post" name="LoginForm" id="LoginForm">
                 <div class="formElement">
                     <input type="text" name="Email" required="required" class="TField" id="Email" placeholder="Email"/>
@@ -93,14 +95,14 @@
                     <input name="Login" type="submit" class="button" id="Login" value="Login" />
                 </div>
             </form>
-            <br><br><br><br><br>
-            <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
+            <!--<br><br><br><br><br>-->
+            
+        <p id="footer_disclaimer"><strong><em>DISCLAIMER:</em></strong><br>New Mexico State University and its branch NMSU Grants make no claims on this web site. No liability is offered! NMSU LEGAL </p>
         </div>
-       
         <div id="disclaimer">
-           
-            Copyright 2016 ~ Developers of ICT435 Senior Project
+          Copyright 2016 ~ Developers of ICT435 Senior Project
         </div>
+        
     
 
 </body>

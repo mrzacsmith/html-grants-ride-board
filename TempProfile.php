@@ -27,10 +27,12 @@
                         <li><a href="riders">Riders</a></a></li>
                         <li><a href="profile">Profile</a></li>
                         <li><a href="contact">Contact Us</a></li>
+                        <li><a href="logout">Log out</a></li>
                     </ul>
-                    <ul>
+                   <!-- <ul>
                         <li><a href="logout">Log out</a></a></li>    
-                    </ul>
+                    </ul> -->
+                    
                 </nav>
             </div>
         </div>
@@ -41,7 +43,7 @@
          
   
   
-      <p style="font-size: 30px; color: yellow;">Profile Info:      </p>
+      <p style="font-size: 30px; color: yellow;">Profile Info:  </p>
       
   
     
@@ -101,6 +103,8 @@
                </div>
             </div>
         </div>
+        
+        
         <script>
             var c = function(pos) {
             var lat = pos.coords.latitude,
@@ -122,10 +126,8 @@
 
             
         </script>
-        </script>
                 <div id="disclaimer">
             &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
         </div>
-        
 </body>
 </html>

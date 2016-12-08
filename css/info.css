@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 0;
     padding: 0;
     background-color: #ededed;
@@ -7,9 +7,9 @@ body {
 .container {
     width: 800px;
     background-color: #ccc;
-    height: auto;
-    clear: both;
-    overflow: auto;
+    /*height: auto;*/
+    /*clear: both;
+    overflow: auto;*/
     margin: 40px auto;
 }
 .header {
@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
     padding: 35px 0 0 55px;
 }
-
 .menu {
     height: 50px;
 }
@@ -38,13 +37,19 @@ body {
 .left-body {
     width: 400px;
     float: left;
-    height: 800px;
+    height: 900px;
+
 }
 .right-body {
     width: 400px;
     float: right;
+    height: 900px;
+    
+}
+.center-body {
+    width: auto;
+    float: none;
     height: auto;
-    margin: 0 auto;
 }
 .formElement {
     width: 350px;
@@ -60,10 +65,10 @@ body {
 }
 .button {
     font-size: 25px;
+    color: white;
     width:170px;
     height: 45px;
     background-color: #8c0b42;
-    font-family: 'Raleway', sans-serif;
 }
 .faq {
     background-color: #ededed;
@@ -73,56 +78,100 @@ body {
     border-radius: 15px;
     color: black;
     font-size: 18px;
+    font-family: 'Raleway', sans-serif;
 }
-.logout {
+#logout {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #8c0b42;
+    padding: 65px 0;
+}
+p {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 #loggedIn {
     font-size: 26px;
-    padding: 5px 0 0 5px;
+    padding: 10px 0 0 10px;
+    font-family: 'Raleway', sans-serif;
 }
 #instructions {
-    font-size: 22px;
-    padding: 10px 0 0 25px;
+    font-size: 18px;
+    padding: 0px 0px 50px 50px;
+    font-family: 'Raleway', sans-serif;
 }
 .footer {
-    font-size: 25px;
-    height: 100px;
+    font-size: 10px;
+    height: 50px;
     background-color: #ededed;
     bottom: 0;
-    position: fixed; 
+    position: fixed;
+    text-align: center;
 }
+    
+/*.left{
+    text-align:left;
+    float:left;
+}
+.right{
+    float:right;
+    text-align:right;
+}
+.centered{
+    text-align:center;
+}*/
 
-p {
-    color: black;
-    font-size: 18px;
+/*{*/
+/*    color: black;*/
+/*    font-size: 18px;*/
+/*    font-family: 'Arial', sans-serif;*/
+/*}*/
+h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-size: 25px;
 }
 address {
     color: #8c0b42;
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 20px;
 }
 .nope {
     font-size: 22px;
     line-height: 50px;
     font-weight: bold;
 }
-#disclaimer {
-    background-color: #ffcc33;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 15px;
-}
+
+
+
+   /* vertica
+   l-align: middle;*/
+   /* padding-left: 15px;*/
+   
+
+
 #footer_info {
     padding-left: 25px;
+    height: 100px;
     font-family: 'Raleway', sans-serif;
 }
 #footer_disclaimer {
-    padding-top: 22px;
-    padding-left: 25px;
+    /*padding-top: 22px;
+    padding-left: 25px;*/
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+}
+#disclaimer {
+    font-size: 15px;
+    background-color: #ededed;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+    /*position: absolute;
+    /*margin: 0 auto;*/
     font-family: 'Raleway', sans-serif;
 }
 #twitter_feed {
@@ -133,14 +182,14 @@ address {
 }
 #first {
     width: 390px;
-    height; 200px;
+    /*height: 200px;*/
     float: left;
     margin: 5px 0 0 5px;
     padding-top: 10px;
 }
 #second {
     width: 390px;
-    height: 200px;
+    /*height: 200px;*/
     float: right;
     margin: 5px 5px 0 0;
     padding-top: 10px;
@@ -148,3 +197,7 @@ address {
 #clear {
     clear: both;
 }
+
+
+
+

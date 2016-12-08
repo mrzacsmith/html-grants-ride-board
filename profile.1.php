@@ -26,7 +26,6 @@
                         <li><a href="account">Home</a></li>
                         <li><a href="riders">Riders</a></a></li>
                         <li><a href="profile">Profile</a></li>
-                        <li><a href="contact">Contact Us</a></li>
                     </ul>
                     <ul>
                         <li><a href="logout">Log out</a></a></li>    
@@ -122,10 +121,5 @@
 
             
         </script>
-        </script>
-                <div id="disclaimer">
-            &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
-        </div>
-        
 </body>
 </html>
