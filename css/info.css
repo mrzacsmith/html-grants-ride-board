@@ -180,6 +180,18 @@ address {
 .fb-like {
     padding-bottom: 4px;
 }
+#rider-container {
+    background-color: blue;
+    padding: 2px 0 0 10px;
+}
+#rider-list {
+    background-color: #ccc;
+    height: 125px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+}
 #first {
     width: 390px;
     /*height: 200px;*/
@@ -197,7 +209,11 @@ address {
 #clear {
     clear: both;
 }
-
-
+#hide {
+    display: none;
+}
+#show {
+    display: true;
+}
 
 

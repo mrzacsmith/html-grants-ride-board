@@ -10,3 +10,7 @@ function validateEmail(form_id, email) {
     }
     
 }
+
+$('#show').click(function() {
+    $('#show').css('display', 'none');
+}); 

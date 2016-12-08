@@ -105,10 +105,38 @@
           <script async defer
       	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAttvBtlHvLpEm6mDgiooDBxYyVrlpCVdY&callback=initMap">
           </script>
-    </div>
-    
-                <div id="disclaimer">
-            &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
-        </div>
+          <div class="rider-container">
+            <button onclick="showHideRiders('rider-list');">Show Riders</button>
+            <div id="rider-list">
+              <ul>
+                <li>Zac Smith</li>
+                <li>Bryant Garcia</li>
+                <li>Shawna Howard</li>
+                <li>Eric Diaz</li>
+                <li>Michael Romero</li>
+                <li>Louis Bear Eagle</li>
+              </ul>
+            </div>
+          </div>
+          <div id="disclaimer">
+              &copy;Copyright 2016 ~ Developers of ICT435 Senior Project
+          </div>
+          
+          <script>
+           function showHideRiders(id) {
+             var riders = document.getElementById(id);
+             
+             if (riders.style.display = 'none') {
+               riders.style.display = 'block';
+             } else {
+               riders.style.display = 'none';
+             }
+           }
+          </script>
+          
+          <!--<script type="text/javascript" src="js/scripts.js"></script>-->
+          <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"-->
+          <!--        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="-->
+          <!--        crossorigin="anonymous"></script>-->
 </body>
 </html>
